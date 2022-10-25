@@ -14,7 +14,7 @@ end_time = datetime.utcnow() - timedelta(seconds=30)
 print(end_time.isoformat('T'))
 
 response = client.search_recent_tweets(
-    "cybercrime -is:retweet -is:reply",
+    "cybercrime lang:nl -is:retweet -is:reply",
     start_time=start_time,
     end_time=end_time,
     max_results = 100,
